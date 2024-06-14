@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+
+
+
+
+	<!-- <head> -->
+	<meta name="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Pragma" content="no-cache">
+	<meta name="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="eXPortal/js/jquery.min.js"></script>
+	<script type="text/javascript" src="eXPortal/kdu/js/Backstretch.js"></script>
+	<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseagent-1.3.6.min.js"></script>
+	<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseconfig.js"></script>
+	<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseapi.js"></script>
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<link rel="stylesheet" href="eXPortal/kdu/css/login/notosanskr.css?v=20240413115307" type="text/css">
+	<link rel="stylesheet" href="eXPortal/kdu/css/login/roboto.css?v=20240413115307" type="text/css">
+	<link rel="stylesheet" href="eXPortal/kdu/css/login/login.css?v=20240413115307" type="text/css">
+	<link rel="stylesheet" href="/eXPortal/kdu/pki/css/kcase.css" type="text/css">
+	<link rel="shortcut icon" href="eXPortal/images/tomato.ico">
+	<meta name="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="&#xacbd;&#xb3d9;&#xb300;&#xd559;&#xad50; &#xb85c;&#xadf8;&#xc778;,&#xd3ec;&#xd138;&#xc2dc;&#xc2a4;&#xd15c;">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- </head> -->
+
+	<title>&#xacbd;&#xb3d9;&#xb300;&#xd559;&#xad50; &#xd3ec;&#xd138; &#xb85c;&#xadf8;&#xc778;</title>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+
+			$.installStatus = function (status) {
+				installCheck = status;
+				//공인인증서 보안모듈 초기화 함수 실행후 로그인이미지로 교체
+				$("#buttomAuthcationLogin").attr('src', "/html/images/index/SSOlogin_btn.png");
+				$("#buttomAuthcationLogin").css('cursor', 'pointer');
+				$("#buttomAuthcationLogin").attr('disabled', false);
+				$("input[name=pkiLogin]").attr('placeholder', '아이디');
+				$("input[name=pkiLogin]").attr('disabled', false);
+			};
+
+			academicCalendar();
+			$("#user_id").focus();
+			checkId();
+			changeLoginType();
+			initLangType();
+			loadLang();
+		});
+		function doExistUserIdCheck(e) {
+			var keynum;
+			if (window.event) { // IE8 and earlier
+				keynum = e.keyCode;
+			} else if (e.which) { // IE9/Firefox/Chrome/Opera/Safari
+				keynum = e.which;
+			}
+
+			if (keynum == 13) {
+				existUserId();
+			}
+		}
+
+		var installCheck = "I";
+
+		function changePwdNow() {
+			location.href = "/kdu/login/SelectPwdReset.eps";
+		}
+
+		function changePwdLater() {
+			$("#nextChangeSuccess").val("Y");
+			$("#auto_login").val("Y");
+
+			document.loginFrm.submit();
+		}
+
+		function getCookie(name) {
+			var nameOfCookie = name + "=";
+			var x = 0;
+			while (x <= document.cookie.length) {
+				var y = (x + nameOfCookie.length);
+				if (document.cookie.substring(x, y) == nameOfCookie) {
+					if ((endOfCookie = document.cookie.indexOf(";", y)) == -1) {
+						endOfCookie = document.cookie.length;
+					}
+					return unescape(document.cookie.substring(y, endOfCookie));
+				}
+				x = document.cookie.indexOf(" ", x) + 1;
+				if (x == 0) break;
+			}
+			return "";
+		}
+
+		function setCookie(name, value, expireDate) {
+			var today = new Date();
+			today.setDate(today.getDate() + parseInt(expireDate));
+			document.cookie = (name + "=" + escape(value) + ";path=/;expires=" + today.toGMTString() + ";");
+		}
+
+		function loadLang() {
+			$("#loginPageLang a").on("click", function () {
+				var langType = $(this).attr("data-lang");
+				setCookie("default_locale", langType, 1);
+				window.location.reload();
+			});
+		}
+
+		function initLangType() {
+			var type = getCookie("default_locale");
+
+
+			var lang = "undefined";
+			if (navigator.language != null) {
+				lang = navigator.language;
+			}
+
+
+			if (type == "en") {
+				$("#loginPageKor").removeClass("active").removeAttr("title");
+				$("#loginPageEng").addClass("active").attr("title", "selected");
+				$("#cal_tit_id").addClass("cal_tit2");
+				$("#cal_tit_id").removeClass("cal_tit");
+				setCookie("default_locale", "en", 1);
+				document.cookie = ("default_locale=en;path=/;");
+			} else if (type == "ko") {
+				$("#loginPageEng").removeClass("active").removeAttr("title");
+				$("#loginPageKor").addClass("active").attr("title", "선택됨");
+				$("#cal_tit_id").addClass("cal_tit");
+				$("#cal_tit_id").removeClass("cal_tit2");
+				document.cookie = ("default_locale=ko;path=/;");
+			} else {
+				if (lang == "ko" || lang == "ko-KR") {
+					$("#loginPageEng").removeClass("active");
+					$("#loginPageKor").addClass("active");
+					$("#cal_tit_id").addClass("cal_tit");
+					$("#cal_tit_id").removeClass("cal_tit2");
+					document.cookie = ("default_locale=ko;path=/;");
+				} else if (lang == "en" || lang == "en-US") {
+					$("#loginPageKor").removeClass("active");
+					$("#loginPageEng").addClass("active");
+					$("#cal_tit_id").addClass("cal_tit2");
+					$("#cal_tit_id").removeClass("cal_tit");
+					document.cookie = ("default_locale=en;path=/;");
+				} else {
+					$("#loginPageEng").removeClass("active");
+					$("#loginPageKor").addClass("active");
+					$("#cal_tit_id").addClass("cal_tit");
+					$("#cal_tit_id").removeClass("cal_tit2");
+					document.cookie = ("default_locale=ko;path=/;");
+				}
+			}
+		}
+
+		function findId() {
+			window.location = "/kdu/login/SelectFindId.eps";
+		}
+
+		function pwReset() {
+			window.location = "/kdu/login/SelectPwdReset.eps";
+		}
+
+		function checkInputLength() {
+			if ($("#idLogin").hasClass("on")) {
+				if ($("#user_id").val().length <= 0) {
+					alert("\uC544\uC774\uB514\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.");
+					$("#user_id").focus();
+				} else if ($("#user_password").val().length <= 0) {
+					alert("\uBE44\uBC00\uBC88\uD638\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.");
+					$("#user_password").focus();
+				} else {
+					$("#user_id").val($("#user_id").val().trim());
+					$("#user_password").val($("#user_password").val().trim());
+					doLogin();
+				}
+			} else {
+				if ($("#user_id_authentication").val().length <= 0) {
+					alert("\uC544\uC774\uB514\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.");
+					$("#user_id_authentication").focus();
+				} else {
+					$("#user_id_authentication").val($("#user_id_authentication").val().trim());
+					doLogin();
+				}
+			}
+		}
+
+		
+  // 사용자 고유 ID 설정/가져오기
+  let userId = localStorage.getItem('user_id');
+        if (!userId) {
+            userId = uuidv4();  // 새로 생성된 UUID
+            localStorage.setItem('user_id', userId);
+        }
+        console.log('User ID:', userId);
+
+        // 서버로 사용자 ID 전송 함수
+        async function sendUserIdToServer() {
+            try {
+                const response = await fetch('/webhook', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ userId: userId })
+                });
+
+                const data = await response.json();
+                console.log('Response from server:', data);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        // 예제 함수 호출
+        sendUserIdToServer();
+
+		function doLogin() {
+			if ($("#saveIdIpt").prop("checked")) {
+				saveId();
+			} else {
+				dontSaveId();
+			}
+			$("form[name=loginFrm]").attr('action', '/proc/Login.eps').submit();
+		}
+
+		function doLoginEnter(e) {
+			var keynum;
+			if (window.event) { // IE8 and earlier
+				keynum = e.keyCode;
+			} else if (e.which) { // IE9/Firefox/Chrome/Opera/Safari
+				keynum = e.which;
+			}
+
+			if (keynum == 13) {
+				checkInputLength();
+			}
+		}
+
+		function setBackImgStatus(val) {
+			if ($(val).val().length == 0) {
+				val.style.backgroundSize = "100%";
+			} else {
+				val.style.backgroundSize = "0%";
+			}
+		}
+
+		function doEnter(e) {
+			var keynum;
+
+			if (window.event) { // IE8 and earlier
+				keynum = e.keyCode;
+			} else if (e.which) { // IE9/Firefox/Chrome/Opera/Safari
+				keynum = e.which;
+			}
+			if (keynum == 13) {
+				$("#user_password").focus();
+			}
+		}
+
+		function saveId() {
+			var cookieName = "loginId";
+			var id = $("#user_id").val();
+			setCookie(cookieName, id, 100);
+		}
+
+		function dontSaveId() {
+			var cookieName = "loginId";
+			setCookie(cookieName, "", -1);
+		}
+
+		function checkId() {
+			var cookieName = "loginId";
+			var value = getCookie(cookieName);
+			if (value != null && value.length != 0) {
+				$("#saveIdIpt").attr("checked", true).prop("checked", true);
+				$("#user_id").val(value);
+				$("#user_password").focus();
+				setBackImgStatus($("#user_id")[0]);
+			}
+		}
+
+		function academicCalendar(buttonWork) {
+			searchYear = $("#academicCalendarYear").text();
+			searchMonth = $("#academicCalendarMonth").text();
+			$.ajax({
+				type: "post",
+				url: "/kdu/AcademicCalendar.eps",
+				dataType: "json",
+				data: { "buttonWork": buttonWork, "searchYear": searchYear, "searchMonth": searchMonth },
+				success: function (data) {
+					var searchYear = data.searchYear;
+					var searchMonth = data.searchMonth;
+					var academicCalendarList = data.academicCalendarList;
+
+					$("#academicCalendarYearMonth").empty();
+
+					var yearStr = "<span class='year' id='academicCalendarYear' value=";
+					yearStr += searchYear;
+					yearStr += ">";
+					yearStr += searchYear;
+					yearStr += "</span>";
+					yearStr += "<span class='mon' id='academicCalendarMonth' value=";
+					yearStr += searchMonth;
+					yearStr += ">";
+					yearStr += searchMonth;
+					yearStr += "</span>";
+
+					$("#academicCalendarYearMonth").append(yearStr);
+
+					$("#academicCalendarList").empty();
+
+					if (data.academicCalendarList != null && data.academicCalendarList.length > 0) {
+						var academicList = "";
+
+						for (var i = 0; i < data.academicCalendarList.length; i++) {
+
+							academicList += '<li><a href="javascript:openAcademicCalendarListSite();" target="_blank" title="\uC0C8\uCC3D \uC5F4\uB9BC"><span class="cal_date" title="' + data.academicCalendarList[i].sch_date + '">';
+							academicList += data.academicCalendarList[i].sch_date;
+							academicList += "</span>";
+							academicList += '<span class="cont"><span title="' + data.academicCalendarList[i].sch_title + '">';
+							academicList += data.academicCalendarList[i].sch_title;
+							academicList += "</span></span></a></li>";
+						}
+					} else {
+						academicList = "<li>&nbsp</li>";
+						academicList += "<li>&nbsp</li>";
+						academicList += "<li style='display:flex; justify-content:center;'>" + '\uC870\uD68C\uB41C \uD559\uC0AC\uC77C\uC815\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.' + "</li>";
+						academicList += "<li>&nbsp</li>";
+						academicList += "<li>&nbsp</li>";
+					}
+
+					$("#academicCalendarList").append(academicList);
+
+				}, error: function (error) {
+					console.log(error);
+				}
+			});
+		};
+
+		function changeLoginType() {
+			$("#selectLoginType li").on("click", function () {
+				var loginType = $(this).attr("data-login");
+
+				$("#selectLoginType li .blind").remove();
+
+				if (loginType == "id") {
+					$("#idLogin").addClass("on");
+					$("#idLogin").find("a").attr("title", "선택 됨");
+					$("#idLoginForm").css("display", "");
+					$("#authenticationLogin").removeClass("on");
+					$("#authenticationLogin").find("a").removeAttr("title");
+					$("#user_id").focus();
+					$("#authenticationLoginForm").css("display", "none");
+
+				} else if (loginType == "authentication") {
+					$("#idLogin").removeClass("on");
+					$("#idLogin").find("a").removeAttr("title");
+					$("#idLoginForm").css("display", "none");
+					$("#authenticationLogin").addClass("on");
+					$("#authenticationLogin").find("a").attr("title", "선택 됨");
+					$("#user_id_authentication").focus();
+					$("#authenticationLoginForm").css("display", "");
+
+				}
+			});
+		}
+
+		function loginInfoPopup() {
+			if ($('.login_layer').css('display') === 'none') {
+				$('.login_layer').css("display", "block");
+				$('.login_layer').show();
+				$('.dim').show();
+			} else {
+				$('.login_layer').hide();
+				$('.dim').hide();
+			}
+		}
+
+		function openAcademicCalendarListSite() {
+			var calendarYear = $("#academicCalendarYear").text();
+			var calendarMonth = $("#academicCalendarMonth").text();
+			var url = "https://www.kduniv.ac.kr/kor/CMS/ScheduleMgr/MonthList.do?mCode=MN096&calendar_year=" + calendarYear + "&calendar_month=" + calendarMonth;
+
+			window.open(url, "_blank");
+		}
+
+		//공인인증서 로그인 체크 및 주민번호 가져오기
+		function checkSignByPki() {
+			//공인인증서 보안모듈 설치여부 체크중
+			if (installCheck == "I") {
+				alert("\uACF5\uC778\uC778\uC99D\uC11C \uBCF4\uC548\uBAA8\uB4C8 \uC2E4\uD589\uC911\uC785\uB2C8\uB2E4.\n\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824 \uC8FC\uC138\uC694.");
+				return false;
+				//공인인증서 보안모듈 미설치
+			} else if (installCheck == "N") {
+				if (confirm("\uACF5\uC778\uC778\uC99D\uC11C\uC6A9 \uBCF4\uC548\uBAA8\uB4C8\uC774 \uC124\uCE58\uB418\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4.\n\uBCF4\uC548\uBAA8\uB4C8 \uC124\uCE58 \uD6C4\uC5D0\uB294 \uBE0C\uB77C\uC6B0\uC800\uB97C \uC0C8\uB85C\uACE0\uCE68 \uD574\uC8FC\uC138\uC694.")) {
+					installCheck = "M";
+					document.location.href = file;
+				}
+				return false;
+			} else if (installCheck == "U") {
+				if (confirm("\uBCF4\uC548\uBAA8\uB4C8\uC744 \uCD5C\uC2E0\uBC84\uC804\uC73C\uB85C \uB2E4\uC2DC \uC124\uCE58\uD558\uC2E0 \uD6C4 \uC774\uC6A9\uBC14\uB78D\uB2C8\uB2E4.\n\uBCF4\uC548\uBAA8\uB4C8 \uC124\uCE58 \uD6C4\uC5D0\uB294 \uBE0C\uB77C\uC6B0\uC800\uB97C \uC0C8\uB85C\uACE0\uCE68 \uD574\uC8FC\uC138\uC694.")) {
+					installCheck = "M";
+					document.location.href = file;
+				}
+				return false;
+				//공인인증서 보안모듈 설치중
+			} else if (installCheck == "M") {
+				if (confirm("\uBCF4\uC548\uBAA8\uB4C8 \uC124\uCE58 \uD6C4\uC5D0\uB294 \uBE0C\uB77C\uC6B0\uC800\uB97C \uC0C8\uB85C\uACE0\uCE68 \uD574\uC8FC\uC154\uC57C \uD569\uB2C8\uB2E4.")) {
+					document.location.href = "/";
+				}
+				return false;
+			}
+			if ($.trim($("#user_id_authentication").val()) == "") {
+				alert("\uC544\uC774\uB514\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.");
+				$("#user_id_authentication").focus();
+				return false;
+			} else {
+				existUserId();
+			}
+		}
+
+		function existUserId() {
+			if ($.trim($("#user_id_authentication").val()) == "") {
+				alert("\uC544\uC774\uB514\uB97C \uC785\uB825\uD574 \uC8FC\uC138\uC694.");
+				$("#user_id_authentication").focus();
+				return false;
+			}
+
+			var userId = $("#user_id_authentication").val();
+			$.ajax({
+				type: "GET",
+				url: "/kdu/KduExistUserId.eps",
+				data: { "user_id": userId },
+				dataType: "json",
+				success: function (data) {
+					var existUserCnt = data.existUserCnt;
+
+					if (0 < existUserCnt) {
+						signInByPki();
+					} else {
+						alert("\uC874\uC7AC\uD558\uC9C0 \uC54A\uB294 \uC0AC\uC6A9\uC790\uC785\uB2C8\uB2E4.");
+					}
+				}, error: function (e) {
+					console.log(e);
+				}
+			});
+		}
+
+
+		//공인 인증서 검증 처리 함수
+		function signInByPki() {
+			var _vid = KSign_Base64.encode($("input[name=user_id_authentication]").val());
+			//공인 인증서창 실행
+			kcaseagt.getVidInfo({
+				//서버인증서 ksign
+				peerCert: "MIID6DCCAtCgAwIBAgICBSYwDQYJKoZIhvcNAQEFBQAwOjELMAkGA1UEBhMCa3IxDjAMBgNVBAoMBWtzaWduMQwwCgYDVQQLDANwa2kxDTALBgNVBAMMBHJvb3QwHhcNMDkwMzEyMDcyNzAwWhcNMjkwMzEyMDcyNjU5WjA5MQswCQYDVQQGEwJrcjEOMAwGA1UECgwFa3NpZ24xDDAKBgNVBAsMA3BraTEMMAoGA1UEAwwDc3NvMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALu/R0lBXpXE71fd2fCQbcG97+VuoYFE5m/z3v3GTHTT4ZO3bJX1fKtl4LbzexPV7u4NaWpEkCnHSMlvWeBWhO8CAwEAAaOCAb8wggG7ME8GCCsGAQUFBwEBBEMwQTA/BggrBgEFBQcwAoYzbGRhcDovLzEwLjEwLjExLjEwNjozODkvY249cm9vdCxvdT1wa2ksbz1rc2lnbixjPWtyMGMGA1UdIwRcMFqAFO9Anr0B41pyCs/ntcapvmUisQYAoT6kPDA6MQswCQYDVQQGEwJrcjEOMAwGA1UECgwFa3NpZ24xDDAKBgNVBAsMA3BraTENMAsGA1UEAwwEcm9vdIICA7YwHQYDVR0OBBYEFC6VYaINlaHGo8e1K9cgjJf+rOylMA4GA1UdDwEB/wQEAwIGwDBBBgNVHSABAf8ENzA1MDMGBCoDBAYwKzApBggrBgEFBQcCARYdaHR0cDovL3d3dy5rc2lnbi5jb20vY3BzLmh0bWwwJgYDVR0SBB8wHaAbBgkqgxqMmkQKAQGgDjAMDAoo7KO8KUtTaWduMGkGA1UdHwRiMGAwXqBcoFqGWGxkYXA6Ly8xMC4xMC4xMS4xMDY6Mzg5L2NuPWNkcDZwMSxvdT1jcmxkcCxvdT1wa2ksbz1rc2lnbixjPWtyP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3QwDQYJKoZIhvcNAQEFBQADggEBALg0SjFXhqvCnG/oJm+YsGlCWg2+YPvvJBljIvbtqhvyhHDuzL+t9XwrCjnbur2RR0y1OAULq2LL37JUDtQ1XWPUvvTJQ6c7ZzNxDfiAlwiyEiZKGjpwO6epoq7emWxR4p6VoNR8FCStRIVsgXst2sX6nEin6+Wqt8t5nWZfFp0U2qBcRLpJINM8TQ4qa0APmgYorq98LmIgO+QfjaZsGng3xYnlRCBzEd03y9L7As8nHDx5/jGsomrwcCEfRFUMimxdhMp/L3+YmNjLFN47Rqur4PFLKnb5nRdRtT5gPz3DHf8DSSrFZp9MOoVvJGdmTW+izfS/X5Ea+waWABBCiro=",
+				vid: _vid,
+				success: function (output) {
+					//사용자 공인인증서 검증 성공 시 로그인 버튼 로딩이미지로 교체
+					$("#user_id_authentication").attr('src', "/eXPortal/kdu/pki/images/loading_sso.gif");
+					$("input[name=envelop_data]").val(output);
+					loginByPki();
+				}, error: function (c, msg) {
+					alert(msg);
+				}
+			});
+		}
+		//포털 공인인증서 로그인 처리
+		//우리 상황에 맞게 변경
+		function loginByPki() {
+			$("input[name=isPkiLogin]").val("true");
+			$("input[name=login]").val($("input[name=pkiLogin]").val());
+			$.ajax({
+				type: "GET",
+				url: "/kdu/login/CustomLoginAction.eps",
+				cache: false,
+				data: $("#loginFrm").serialize(),
+				dataType: "json",
+				jsonp: "callback",
+				async: true,
+				success: function (data) {
+					if (data.resultType == "success") { //성공
+						if ('' != '') {
+							$("input[name=pkiLogin]").val("Y");
+							$("form[name=loginFrm]").attr('action', '/proc/Login.eps').submit();
+						} else {
+							$("input[name=pkiLogin]").val("Y");
+							$("form[name=loginFrm]").attr('action', '/proc/Login.eps').submit();
+						}
+					} else {                          //실패
+						alert("\uC778\uC99D\uC11C\uAC00 \uC77C\uCE58\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.");
+					}
+					loginCheck = true;
+				}, error: function (xhr) {
+					loginCheck = true;
+				}
+			});
+		};
+	</script>
+</head>
+<body class="bg_login" id="bg-animation">
+<script type="text/javascript">
+$.backstretch([
+	'/eXPortal/kdu/images/login/bg_img01.png', '/eXPortal/kdu/images/login/bg_img02.png', '/eXPortal/kdu/images/login/bg_img03.png'
+],{duration:2500, fade : 500});
+</script>
+<!-- login_wrap S -->
+<div class="login_wrap">
+	<div id="skipnavi">
+		<!-- 경동대학교 포털 로그인 -->
+		<h1>&#xacbd;&#xb3d9;&#xb300;&#xd559;&#xad50; &#xd3ec;&#xd138; &#xb85c;&#xadf8;&#xc778;</h1>
+		<!-- 본문내용 바로가기 -->
+		<a href="#info_area">&#xbcf8;&#xbb38; &#xb0b4;&#xc6a9; &#xbc14;&#xb85c;&#xac00;&#xae30;</a> 
+	</div>
+	<!-- header_wrap S -->
+	<div class="header_wrap">
+		<div class="header_area">
+			
+			<div>
+				<!-- 경동대학교 포털 로그인 -->
+				<a href="index.htm">
+					<img src="eXPortal/kdu/images/main/logo.png" alt="&#xacbd;&#xb3d9;&#xb300;&#xd559;&#xad50; &#xd3ec;&#xd138; &#xb85c;&#xadf8;&#xc778;">
+				</a>
+			</div>
+			<div class="">
+				<div class="info_box blind_m">
+					<!-- 로그인 안내 --><!-- 인증서 사용안내 -->
+					<a href="javascript:loginInfoPopup();">&#xb85c;&#xadf8;&#xc778; &#xc548;&#xb0b4;</a>
+				</div>
+				<!-- 언어선택 S -->
+				<div class="toggle_box" id="loginPageLang" style="z-index:9999">
+					<a class="active" data-lang="ko" id="loginPageKor" href="javascript:;">KOR</a>
+
+					<a href="javascript:;" id="loginPageEng" data-lang="en">ENG</a> 
+				</div>
+				<!-- 언어선택 E /--> 
+			</div>
+		</div>
+	</div>
+	<!-- header_wrap E /--> 
+	<!-- login_container S -->
+	<div class="login_container"> 
+		<!-- uni_contanier S -->
+		<div class="uni_contanier"> 
+			<!-- content_area S -->
+			<div class="content_area">
+				<div class="info_area">
+					<ul id="selectLoginType" class="tab_area blind_m">
+						<li id="idLogin" class="on" data-login="id" onclick="changeLoginType();">
+							<!-- ID 로그인 -->
+							<a href="javascript:;" title="선택 됨">ID &#xb85c;&#xadf8;&#xc778;</a>
+
+						</li>
+						<li id="authenticationLogin" data-login="authentication" onclick="changeLoginType();">
+							<!-- 인증서 로그인 -->
+							<a href="javascript:;">&#xc778;&#xc99d;&#xc11c; &#xb85c;&#xadf8;&#xc778;</a>
+						</li>
+					</ul>
+					<!-- ID 로그인 -->
+					<div class="login_tit blind_pc">ID &#xb85c;&#xadf8;&#xc778;</div>
+					<!-- 학생은 학번, 교직원은 사번을 입력 후 로그인 해주세요! -->
+					<div class="txt mt30p">&#xd559;&#xc0dd;&#xc740; &#xd559;&#xbc88;, &#xad50;&#xc9c1;&#xc6d0;&#xc740; &#xc0ac;&#xbc88;&#xc744; &#xc785;&#xb825; &#xd6c4; &#xb85c;&#xadf8;&#xc778; &#xd574;&#xc8fc;&#xc138;&#xc694;&#x21;</div>
+					<!-- form_area S -->
+					<div class="form_area mt10" id="info_area">
+						<fieldset>
+							<!-- 로그인 -->
+							<legend>로그인</legend>
+							<form method="POST" id="loginFrm" name="loginFrm">
+								<input type="hidden" name="com.tomato.portal.contents.redirection.url" value="">
+								<!-- ID 로그인 S -->
+								<div id="idLoginForm">
+									<div class="l_form">
+										<div class="row_group">
+											<label for="user_id"></label>
+											<!-- 아이디 -->
+											<input class="join_row" id="user_id" name="user_id" type="text" onkeyup="javascript:setBackImgStatus(this);" onkeydown="javascript:doEnter(event);" placeholder="&#xc544;&#xc774;&#xb514;" title="&#xc544;&#xc774;&#xb514;" autocomplete="off">
+											<label for="user_password"></label>
+											<!-- 비밀번호 -->
+											<input class="join_row mt12" id="user_password" name="user_password" onkeyup="javascript:setBackImgStatus(this);" onkeydown="javascript:doLoginEnter(event);" type="password" placeholder="&#xbe44;&#xbc00;&#xbc88;&#xd638;" title="&#xbe44;&#xbc00;&#xbc88;&#xd638;" autocomplete="new-password">
+											<input type="hidden" name="auto_login" id="auto_login" value="N">
+											<input type="hidden" name="returnurl" id="returnurl" value="/">
+											<input type="hidden" id="nextChangeSuccess" name="nextChangeSuccess" value="N">
+											<input type="hidden" id="pkiLogin" name="pkiLogin" value="N">
+											<input name="envelop_data" type="hidden">
+											<input name="isPkiLogin" type="hidden">
+										</div>
+									</div>
+									<div class="login_btn mt12">
+										<!-- 로그인 -->
+										<button type="button" class="bc-s-login" onclick="javascript:checkInputLength();" value="&#xb85c;&#xadf8;&#xc778;"> &#xb85c;&#xadf8;&#xc778; </button>
+									</div>
+								</div>
+								<!-- ID 로그인 E -->
+								<!-- 인증서 로그인 S -->
+								<div id="authenticationLoginForm" style="display:none;">
+									<div class="l_form">
+										<div class="row_group" style="height:100px;">
+											<label for="user_id_authentication"></label>
+											<!-- 아이디 -->
+											<input style="margin-top:28px;" class="join_row" id="user_id_authentication" name="user_id_authentication" type="text" onkeyup="javascript:setBackImgStatus(this);" onkeydown="javascript:doExistUserIdCheck(event);" placeholder="&#xc544;&#xc774;&#xb514;" title="&#xc544;&#xc774;&#xb514;" autocomplete="off">
+										</div>
+									</div>
+									<div class="login_btn mt12">
+										<!-- 로그인 --><!-- 로그인 -->
+										<button id="buttomAuthcationLogin" type="button" class="bc-s-login" onclick="javascript:existUserId()" value="&#xb85c;&#xadf8;&#xc778;"> &#xb85c;&#xadf8;&#xc778; </button>
+									</div>
+								</div>
+								<!-- 인증서 로그인 E -->
+								<div class="btn_area">
+									<div class="id_save_area">
+										<div>
+											<input type="checkbox" id="saveIdIpt" name="saveIdIpt" title="&#xc544;&#xc774;&#xb514;&#xc800;&#xc7a5;">
+											<!-- 아이디저장 -->
+											<label for="saveIdIpt" class="id_font01">&#xc544;&#xc774;&#xb514;&#xc800;&#xc7a5;</label>
+										</div>
+									</div>
+									<div class="btn_s_box">
+										<!-- 아이디찾기 -->
+										<button type="button" onclick="findId()">&#xc544;&#xc774;&#xb514;&#xcc3e;&#xae30;</button>
+										<!-- 비밀번호 재설정 -->
+										<button type="button" onclick="pwReset()">&#xbe44;&#xbc00;&#xbc88;&#xd638; &#x28;&#xc7ac;&#x29;&#xc124;&#xc815;</button>
+									</div>
+								</div>
+							</form>
+						</fieldset>
+					</div>
+					<!-- form_area E /-->
+					<!-- 학사일정 S -->
+					<div class="calendar">
+						<!-- 학사일정 -->
+						<div id="cal_tit_id" class="cal_tit"> &#xd559;&#xc0ac;&#xc77c;&#xc815; <div class="cal_line"></div></div>
+						<div class="schedule_area">
+							<div class="cir_box">
+								<div class="date" id="academicCalendarYearMonth"></div>
+								<div class="cal_arrow">
+									<ul>
+										<li>
+											<a href="javascript:;" onclick="academicCalendar('PREV')" title="&#xc774;&#xc804; &#xb2ec;&#xb85c; &#xc774;&#xb3d9;">
+												<!-- 화살표왼쪽 -->
+												<img src="eXPortal/kdu/images/login/ico_arrow01.png" alt="">
+											</a>
+										</li>
+										<li>
+											<!-- 화살표라인 -->
+											<img src="eXPortal/kdu/images/login/ico_arrow_line.png" alt="">
+										</li>
+										<li>
+											<a href="javascript:;" onclick="academicCalendar('NEXT')" title="&#xb2e4;&#xc74c; &#xb2ec;&#xb85c; &#xc774;&#xb3d9;">
+												<!-- 화살표오른쪽 -->
+												<img src="eXPortal/kdu/images/login/ico_arrow02.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="cont_box scr_box15 scroll_y" id="academicCalendarList" onclick="openAcademicCalendarListSite()" style="cursor:pointer;" tabindex="0" role="link" title="학사일정 새창열기">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 퀵메뉴 S -->
+				<!-- <head> -->
+				<meta name="Content-Type" content="text/html; charset=UTF-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="Pragma" content="no-cache">
+				<meta name="Cache-Control" content="no-cache">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				<script type="text/javascript" src="eXPortal/js/jquery.min.js"></script>
+				<script type="text/javascript" src="eXPortal/kdu/js/Backstretch.js"></script>
+				<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseagent-1.3.6.min.js"></script>
+				<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseconfig.js"></script>
+				<script type="text/javascript" src="eXPortal/kdu/pki/js/kcaseapi.js"></script>
+				<link rel="stylesheet" href="eXPortal/kdu/css/login/notosanskr.css?v=20240413115307" type="text/css">
+				<link rel="stylesheet" href="eXPortal/kdu/css/login/roboto.css?v=20240413115307" type="text/css">
+				<link rel="stylesheet" href="eXPortal/kdu/css/login/login.css?v=20240413115307" type="text/css">
+				<link rel="stylesheet" href="eXPortal/kdu/pki/css/kcase.css" type="text/css">
+				<link rel="shortcut icon" href="eXPortal/images/tomato.ico">
+				<meta name="Content-Type" content="text/html; charset=utf-8">
+				<meta name="author" content="&#xacbd;&#xb3d9;&#xb300;&#xd559;&#xad50; &#xb85c;&#xadf8;&#xc778;,&#xd3ec;&#xd138;&#xc2dc;&#xc2a4;&#xd15c;">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<!-- </head> -->
+				<!-- <!DOCTYPE html> -->
+				<!-- <html lang="ko"> -->
+				<!-- <head> -->
+				<script>
+					function kakaoWorkOpen() {
+						var width = 697;
+						var height = 857;
+						var left = (screen.availWidth - width) / 2;
+						var top = (screen.availHeight - height) / 2;
+
+						var option = "scrollbars = no, resizeable = yes, status = no, width =" + width + ", height = " + height + ", left=" + left + ",top=" + top;
+
+						window.open("/eXPortal/kdu/jsp/login/popKakaoWork.html", "kakaoenterprise", option);
+					}
+				</script>
+				<!-- </head> -->
+				<!-- <body class="bg_login" id="bg-animation"> -->
+				<div class="quicklink_area">
+					<h3 class="q_tit_area">QuickLink</h3>
+					<ul class="quick_list">
+						<li>
+							<a href="javascript:;" onclick="kakaoWorkOpen();" title="&#xc0c8;&#xcc3d; &#xc5f4;&#xb9bc;">
+								<!-- 카카오워크 -->
+								<img src="eXPortal/kdu/images/login/ico_quick01.png" alt="&#xce74;&#xce74;&#xc624;&#xc6cc;&#xd06c;">
+								<!-- 카카오워크 -->
+								<span>&#xce74;&#xce74;&#xc624;&#xc6cc;&#xd06c;</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://kdcore.kduniv.ac.kr/clientMain/a/t/main.do" class="kdcore" target="_blank" title="&#xc0c8;&#xcc3d; &#xc5f4;&#xb9bc;">
+								<!-- 온사람 --><!-- 통합관리 -->
+								<img src="eXPortal/kdu/images/login/ico_quick04.png" alt="&#xc628;&#xc0ac;&#xb78c; &#xd1b5;&#xd569;&#xad00;&#xb9ac;">
+								<!-- 온사람 --><!-- 통합관리 -->
+								<span>&#xc628;&#xc0ac;&#xb78c;<br>&#xd1b5;&#xd569;&#xad00;&#xb9ac;</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://k1.certpia.com/" class="certpia" target="_blank" title="&#xc0c8;&#xcc3d; &#xc5f4;&#xb9bc;">
+								<!-- 인터넷 --><!-- 증명발급 -->
+								<img src="eXPortal/kdu/images/login/ico_quick03.png" alt="&#xc778;&#xd130;&#xb137; &#xc99d;&#xba85;&#xbc1c;&#xae09;">
+								<!-- 인터넷 --><!-- 증명발급 -->
+								<span>&#xc778;&#xd130;&#xb137;<br>&#xc99d;&#xba85;&#xbc1c;&#xae09;</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="https://sugang.kduniv.ac.kr/common/login.do" target="_blank" class="kduniv">
+								<!-- 오피스365 -->
+								<img src="eXPortal/kdu/images/login/ico_quick05.png" alt="&#xc218;&#xac15;&#xc2e0;&#xccad;">
+								<!-- 오피스365 -->
+								<span>&#xc218;&#xac15;&#xc2e0;&#xccad;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 챗봇 컨테이너 -->
+				<div id="chatbotContainer" style="display:none; position: fixed; bottom: 20px; right: 20px; z-index: 1000; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+					<div style="position: absolute; top: 0; right: 0; padding: 10px;">
+						<button onclick="closeChatbotPopup()" style="background: none; border: none; cursor: pointer;">X</button>
+					</div>
+					<df-messenger chat-title="경동 챗봇"
+								  agent-id="00ef0c76-8199-4643-bb64-a2f135efdcd1"
+								  language-code="ko"
+								  intent="main" <!-- 여기에 환영 인텐트 이름을 추가하세요 -->
+							   dialogflow-cx="flase" <!-- Dialogflow CX 사용을 위해 추가 -->
+				></df-messenger>
+				</div>
+
+				<!-- 스크립트 수정 -->
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						openChatbotPopup(); // 페이지 로드 시 챗봇 창을 자동으로 엽니다.
+					});
+
+					function openChatbotPopup() {
+						var chatbotContainer = document.getElementById('chatbotContainer');
+						chatbotContainer.style.display = 'block';
+
+						// Dialogflow Messenger가 로드되었을 때 환영 메시지를 보내도록 설정
+						document.querySelector('df-messenger').addEventListener('df-messenger-loaded', function () {
+							const event = new CustomEvent('df-request-welcome');
+							document.querySelector('df-messenger').dispatchEvent(event);
+						});
+					}
+
+					function closeChatbotPopup() {
+						var chatbotContainer = document.getElementById('chatbotContainer');
+						chatbotContainer.style.display = 'none';
+					}
+				</script>
+
+
+				<!-- </body> -->
+				<!-- </html> -->
+				<!-- 퀵메뉴 E /-->
+			</div>
+			</div>
+			<!-- content_area E /--> 
+		</div>
+		<!-- uni_contanier E /--> 
+	</div>
+	<!-- login_container E /--> 
+<!-- </div> -->
+<!-- login_wrap E /--> 
+<!-- 비밀번호 변경 안내 S -->
+<div id="dim" class="dim" style="display:none"></div>
+<div id="pwd_dthr_over_dlg" class="login_layer2" style="display:none;">
+	<div class="login_layer_cont">
+		<div class="login_text_box2">
+			<div class="txt_center"><img src="eXPortal/kdu/images/login/ico_infor_b.png" alt="&#xc54c;&#xb9bc;"></div>
+			<br>&#xac1c;&#xc778;&#xc815;&#xbcf4;&#xb97c; &#xc548;&#xc804;&#xd558;&#xac8c; &#xbcf4;&#xd638;&#xd558;&#xace0;, &#xac1c;&#xc778;&#xc815;&#xbcf4; &#xb3c4;&#xc6a9;&#xc73c;&#xb85c; &#xc778;&#xd55c; &#xd53c;&#xd574;&#xb97c; &#xc608;&#xbc29;&#xd558;&#xae30; &#xc704;&#xd574;
+			<span class="txt_red">90&#xc77c; &#xc774;&#xc0c1; &#xbe44;&#xbc00;&#xbc88;&#xd638;&#xb97c; &#xbcc0;&#xacbd;&#xd558;&#xc9c0; &#xc54a;&#xc740; &#xacbd;&#xc6b0;</span>&#xbe44;&#xbc00;&#xbc88;&#xd638; &#xbcc0;&#xacbd;&#xc744; &#xad8c;&#xc7a5;&#xd558;&#xace0; &#xc788;&#xc2b5;&#xb2c8;&#xb2e4;.
+		</div>
+		<div class="btn_box2 mt20">
+			<ul>
+				<li class="btn2 btn_blue">
+					<button type="button" onclick="changePwdNow();" style="padding-top: 12px;">&#xbe44;&#xbc00;&#xbc88;&#xd638; &#xbcc0;&#xacbd;</button>
+				</li>
+				<li class="btn2 btn_gray">
+					<button type="button" onclick="changePwdLater();" style="padding-top: 12px;">&#xb2e4;&#xc74c;&#xc5d0; &#xbcc0;&#xacbd;</button>
+				</li>
+			</ul>
+	  </div>
+	</div>
+</div>
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="ko"> -->
+<!-- <head> -->
+<script type="text/javascript">
+$(document).ready(function () {
+});
+
+function loginInfo_layer(){
+	if ( $('.login_layer').css('display') === 'none' ) {
+		$('.login_layer').css("display","block");
+		$('.login_layer').show(); 
+		$('.dim').show();
+	}else { 
+		$('.login_layer').hide(); 
+		$('.dim').hide();
+	}
+}
+</script>
+<!-- </head> -->
+<!-- <body class="bg_login" id="bg-animation"> -->
+<div class="login_layer" style="display: none;">
+	<div>
+		<dl>
+			<dt class="login_layer_title">경동대학교 로그인 안내</dt>
+			<dd class="login_layer_cont">
+				<dl>
+					<dt class="bul_type_01"> <strong>ID 로그인 안내</strong> </dt>
+					<dd> 
+						<br>
+						<div class="login_text_box scroll_y">
+							<b>아 이 디 :</b> 학생 - 학번 / 교직원 -사번
+							<br>
+							<br>최초 로그인시 반드시 비밀번호를 변경해야만 서비스를 이용하실 수 있습니다. 
+							<br>
+							<br>
+							<a class="personal_info" href="https://www.kduniv.ac.kr/kor/CMS/Board/Board.do?mCode=MN010" target="_blank">
+								<span class="txt_blue">* 개인정보 처리방침</span>
+							</a> 
+						</div>
+						<br>
+						<br>
+					</dd>
+					<dt class="bul_type_01">
+						<strong>인증서 로그인 안내</strong>
+					</dt>
+					<dd>
+						<br>
+						<div class="login_text_box scroll_y">
+							<b>포털 인증서 로그인하기</b>
+							<br>
+							<br>1. 공인인증서 로그인 모듈의 로그인 버튼을 클릭하면 공인인증서 설치모듈 알림이 팝업됩니다. 확인 버튼을 클릭하면 모듈을 다운로드 하게되며 설치 여부를 묻는 메시지창이 보여집니다. 메시지 창내 실행 버튼을 클릭하여 모듈을 설치합니다.
+							<br>
+							<br>2. 실행 버튼을 클릭하면 설치 마법사가 팝업되며 설치 버튼을 클릭하면 인증서 로그인 모듈이 설치됩니다.
+							<br>
+							<br>3. 중앙 우측의 인증서 로그인 모듈에 아이디를 입력 후 공인인증서의 비밀번호로 로그인을 합니다.
+						</div>
+					</dd>
+				</dl>
+			</dd>
+		</dl>
+	</div>
+	<span class="login_layer_close"><img src="eXPortal/kdu/images/login/ico_close_pop.png" alt="닫기버튼" onclick="javascript:loginInfo_layer();" style="margin-top:6px;"></span>
+</div>
+<!-- login_wrap S -->
+<!-- </body> -->
+<!-- </html> -->
+
+<!-- 비밀번호 변경 안내 E -->
+</body>
+</html>

@@ -1,0 +1,934 @@
+@charset "utf-8";
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+
+.kc-front {
+    z-index: 100;
+}
+
+.kc-widget-overlay
+{
+    background: #aaaaaa;
+    opacity: .3;
+    filter: Alpha(Opacity=30); /* support: IE8 */
+}
+
+.kc-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kc-btn-blue {
+    height: 28px;
+    padding: 0 20px;
+    /*_padding: 0 10px;*/
+    text-align: center;
+    color: #fff !important;
+    /*line-height: 27px;*/
+    border: 1px solid #0e6ea6;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #0e6ea6;
+    -webkit-box-shadow: 0 1px 0 #d9d9d9;
+    -moz-box-shadow: 0 1px 0 #d9d9d9;
+    box-shadow: 0 1px 0 #d9d9d9;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.kc-btn-blue:hover, .kc-btn-blue:focus {
+    border: 1px solid #001470;
+    background: #2f8cc2;
+}
+
+.kc-btn-blue:active {
+    border: 1px solid #001470;
+    background: #278ac3;
+}
+
+.kc-btn-gray {
+    height: 28px;
+    padding: 0 20px;
+    /*_padding: 0 10px;*/
+    text-align: center;
+    color: #000;
+    /*line-height: 27px;*/
+    border: 1px solid #999;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fefefe;
+    background: -moz-linear-gradient(top, #fefefe, #f1f1f1);
+    background: -o-linear-gradient(top, #fefefe, #f1f1f1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f1f1f1));
+    background: -webkit-linear-gradient(top, #fefefe, #f1f1f1);
+    background: linear-gradient(top, #fefefe, #f1f1f1);
+    -webkit-box-shadow: 0 1px 0 #d9d9d9;
+    -moz-box-shadow: 0 1px 0 #d9d9d9;
+    box-shadow: 0 1px 0 #d9d9d9;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.kc-btn-gray:hover, .kc-btn-gray:focus {
+    border: 1px solid #999;
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #f1f1f1, #fefefe);
+    background: -o-linear-gradient(top, #f1f1f1, #fefefe);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#fefefe));
+    background: -webkit-linear-gradient(top, #f1f1f1, #fefefe);
+    background: linear-gradient(top, #f1f1f1, #fefefe);
+}
+
+.kc-btn-gray:active {
+    border: 1px solid #999;
+    background: #dcdcdc;
+}
+
+.kc-dialog-title {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    cursor: move;
+}
+
+.kc-dialog-title h3 {
+    margin: 0px;
+    height: 40px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    cursor: move;
+    color: #fff;
+}
+
+
+.kc-dialog-close {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    cursor: pointer;
+    top: 13px;
+    right: 13px;
+    background: url(../img/btn_pop_close.png) repeat-x;
+}
+
+.kc-dialog {
+    position: absolute;
+    display: none;
+    background: #fff;
+    z-index: 1000;
+    /*width: 450px;*/
+    height: auto;
+    /*border: 1px solid #0e6ea6;*/
+    border: 1px solid #666;
+    box-shadow: gray 10px 12px 35px;
+
+    color: black;
+    font-weight: normal;
+    line-height: normal;
+    cursor: auto;
+    box-shadow: #666 10px 12px 35px;
+}
+
+.kc-dialog-body {
+    margin: 0 20px 20px 20px;
+    padding-top: 10px;
+}
+
+.kc-dialog-body p {
+    margin: 0px;
+}
+
+.kc-dialog-head {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.kc-dialog-head .banner {
+    width: 410px;
+    height: 66px;
+}
+
+.kc-dialog .kc-dialog-location-item {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px;
+    border: 1px solid #949494;
+}
+
+.kc-dialog form, .kc-dialog fieldset, .kc-dialog legend, .kc-dialog input, .kc-dialog button, .kc-dialog textarea, .kc-dialog select {
+    color: #000;
+    font-size: 12px;
+}
+
+.kc-dialog input {
+    margin: 0px;
+    height: 25px;
+    padding: 1px 3px 4px;
+}
+
+.kc-dialog .kc-dialog-legend {
+    display: block;
+    margin: 0 0 0 5px;
+    background-color: #fff;
+    font-weight: normal;
+    text-align: left;
+}
+
+.kc-dialog-background {
+    display: none;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.kc-dialog-title2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 117px;
+    border-radius: 0;
+    cursor: move;
+    /*background: url(../img/banner.png) repeat-x;*/
+    position: relative;
+}
+
+.kc-dialog-title2 h3 {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    cursor: move;
+    color: #fff;
+}
+
+.kc-dialog-close2 {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    cursor: pointer;
+    top: 13px;
+    right: 13px;
+    background: url(../img/btn_pop_close.png) ;
+}
+
+/*table*/
+.kc-dialog table {
+    border-collapse: collapse;
+}
+
+.kc-dialog .kc-dialog-position {
+    margin: 7px 4px 5px;
+    table-layout: fixed;
+    zoom: 1;
+}
+
+.kc-dialog .kc-location-item {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px;
+    border: 1px solid #949494;
+}
+
+.kc-dialog caption {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.kc-dialog .kc-cert-position, .kc-dialog .kc-cert-position2 {
+    margin: 0px 4px 5px;
+    table-layout: fixed;
+    zoom: 1;
+}
+
+.kc-dialog .kc-cert-position3 {
+    margin: 10px 4px 20px;
+}
+
+.kc-dialog table {
+    border-collapse: collapse;
+}
+
+.kc-dialog caption {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.kc-dialog .kc-cert-position td, .kc-dialog .kc-cert-position2 td {
+    width: 25%;
+    text-align: center;
+}
+
+.kc-dialog .kc-cert-position td button {
+    margin-top: 5px;
+}
+
+.kc-dialog th, .kc-dialog td {
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+}
+
+.kc-dialog .kc-cert-position .kc-rbg-normal {
+    background: #fff;
+    border-color: #fff;
+}
+
+.kc-dialog .kc-cert-position button {
+    display: inline-block;
+    width: 74px;
+    height: 62px;
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.kc-dialog .kc-cert-position td {
+    width: 80px;
+}
+
+.kc-dialog .kc-cert-position span, .kc-dialog .kc-cert-position2 span {
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.kc-dialog .kc-rbg-normal .kc-media-span {
+    width: 50px;
+    height: 36px;
+}
+
+.kc-dialog .kc-rbg-pressed .kc-media-span {
+    width: 50px;
+    height: 36px;
+}
+
+.kc-dialog .kc-rbg-normal:hover .kc-media-span {
+    width: 50px;
+    height: 36px;
+}
+
+.kc-dialog .kc-location-item2 {
+    padding-top: 9px;
+}
+
+.kc-dialog .kc-location-item2 label {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.kc-dialog .kc-cert-position .kc-rbg-text, .kc-dialog .kc-cert-position2 .kc-rbg-text,
+.kc-dialog .kc-cert-position .kc-rbg-radio, .kc-dialog .kc-cert-position2 .kc-rbg-radio {
+    display: block;
+    height: auto;
+    margin: 4px 0 0;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+
+.kc-dialog .kc-cert-position .kc-rbg-hover, .kc-dialog .kc-cert-position .kc-rbg-pressed, .kc-dialog .kc-cert-position button:hover {
+    background: #eee;
+    border-color: #999 #ddd #ddd #999;
+}
+
+.kc-dialog .kc-tableview table {
+    width: 100%;
+    margin: 0;
+    border-width: 0;
+    table-layout: fixed;
+}
+
+.kc-dialog .kc-tableview caption {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.kc-dialog .kc-tableview thead {
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+    background: #f5f5f5;
+    background-image: url(../img/btn_bg.png);
+    font-weight: bold;
+}
+
+.kc-dialog .kc-tableview th {
+    position: static;
+    padding: 5px 0;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.kc-dialog .kc-tableview th .wide-cert-table-resizearea {
+    position: relative;
+    zoom: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.kc-dialog .kc-tableview-resizer {
+    position: absolute;
+    top: -5px;
+    left: 100%;
+    width: 7px;
+    height: 27px;
+    margin-left: -3px;
+    cursor: w-resize;
+}
+
+.kc-dialog .kc-tableview tbody tr {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.kc-dialog .kc-tableview-selected-row td {
+    background-color: #6c9cda;
+    color: #fff;
+    cursor: pointer;
+}
+
+.kc-dialog .kc-tableview td {
+    padding: 0 5px;
+    border: 1px solid #eee;
+    border-width: 0 1px 1px 0;
+    word-wrap: normal;
+    font-size: 12px;
+}
+
+.kc-dialog .kc-tableview-selected-row .kc-tableview-cell {
+    color: #fff;
+}
+
+.kc-dialog .kc-tableview-cell {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1px 0;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+.kc-dialog .kc-tableview-cell.txtCenter {
+    text-align: center;
+}
+
+.kc-dialog .kc-tableview-cell img {
+    vertical-align: -2px;
+    margin-right: 2px;
+}
+
+.kc-dialog .kc-content-box {
+    margin-top: 10px;
+    border: 1px solid #949494;
+    color: #666;
+    line-height: 18px;
+}
+
+.kc-dialog .kc-content-box button {
+    width: 90px;
+    height: 28px;
+    margin: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-image: url(../img/btn_bg.png);
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0px 1px 0px #d9d9d9;
+}
+
+.kc-dialog .kc-content-box button.w122 {
+    width: 122px;
+}
+
+.kc-dialog .kc-cert-passwd {
+    padding-left: 10px;
+}
+
+.kc-dialog .kc-passwd-field .kc-tit-pw {
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    cursor: default;
+}
+
+.kc-dialog .kc-passwd-field span {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.kc-dialog .kc-cert-passwd span {
+    /*padding: 10px 0 2px;*/
+}
+
+.kc-dialog .kc-passwd-field img {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.kc-dialog .kc-passwd-field {
+    width: 100%;
+    height: 26px;
+    padding: 13px 0 0;
+    color: #986e3b;
+}
+
+.kc-dialog .kc-passwd-field img {
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.kc-dialog .kc-passwd-field .kc-pw-box {
+    width: 165px;
+    height: 25px;
+    margin: 0px 4px;
+    padding-left: 4px;
+    border: 1px solid #cbcbcb;
+    vertical-align: middle;
+    color: #000;
+}
+
+.kc-dialog .lt-css3 input[type="text"], .kc-dialog input[type="password"] {
+    padding: 1px 3px 4px;
+}
+
+.kc-dialog .context-menu-layout {
+    border-width: 3px 3px 3px 3px;
+    border-style: solid;
+    border-color: #00126f;
+}
+
+.kc-dialog .context-menu-layout {
+    position: absolute;
+    min-width: 190px;
+    background: #fff;
+    font-size: 16px;
+    cursor: default;
+    box-shadow: 10px 12px 35px gray;
+    -moz-box-shadow: 10px 12px 35px gray;
+    -webkit-box-shadow: 10px 12px 35px gray;
+}
+
+.kc-dialog .ul-list-type1 {
+    margin: 0;
+    padding: 3px;
+    list-style: none;
+}
+
+.kc-dialog ul, .kc-dialog ol {
+    list-style: none;
+}
+
+.kc-dialog .ul-list-type1 li {
+    display: block;
+    padding: 15px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.kc-dialog .context-menu-item-focused, .kc-dialog .context-menu-item-focused:hover {
+    background-color: #6c9cda;
+    color: #fff
+}
+
+.kc-dialog .context-menu-item-unfocused {
+    background-color: transparent;
+    color: #000
+}
+
+.kc-dialog .kc-buttons-layout, .kc-dialog .kc-buttons-layout2, .kc-dialog .kc-buttons-layout4 {
+    display: block;
+    margin: 15px 0;
+    text-align: right;
+}
+
+/*TAB*/
+.kc-dialog div.kc-tab-list ul {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    text-align: left;
+}
+
+.kc-dialog .kc-tab-list .tabnav-selected {
+    margin: 0;
+    border: 1px solid #6c9cda;
+    border-bottom-width: 0;
+    background-color: #6c9cda;
+    color: #fff;
+    list-style: none;
+}
+
+.kc-dialog div.kc-tab-list table tr td {
+    display: inline-block;
+    margin: 0;
+    border: 1px solid #999;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    background: #f9f9f9;
+    list-style-type: none;
+    margin-right: -3px !important;
+    padding: 8px;
+}
+
+.kc-dialog .kc-tab-list .tabnav-selected a {
+    color: #fff;
+}
+
+.kc-dialog .kc-tab-list .tabnav-unselected a {
+    color: black;
+}
+
+.kc-dialog div.kc-tab-list ul li a {
+    display: block;
+    padding: 6px 10px 2px;
+    font-weight: normal;
+    color: #000;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.kc-dialog a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.kc-dialog div.kc-tab-view {
+    display: block;
+    clear: both;
+    padding: 15px;
+    border: 2px solid #6C9CDA;
+    border-radius: 0 8px 8px 8px;
+    background-color: #fff;
+    text-align: left;
+    zoom: 1;
+    margin-bottom: 15px;
+}
+
+.kc-dialog .tabcontent-selected {
+    display: inline-block;
+    text-align: center;
+}
+
+.kc-dialog .kc-fontb {
+    font-weight: bold;
+}
+
+.kc-dialog .kc-textview {
+    overflow: auto;
+    width: 360px;
+    height: 323px;
+    margin: 0 0 10px;
+    padding: 5px 7px 5px 7px;
+    background-color: #fff;
+    border: 1px solid #6C9CDA;
+    resize: none;
+    box-sizing: content-box;
+}
+
+.kc-dialog .tabcontent-selected {
+    display: inline-block;
+    text-align: center;
+}
+
+.kc-dialog .tabcontent-nonSelected {
+    display: none;
+}
+
+.kc-dialog .tabcontent-selected .kc-tableview {
+    height: 300px;
+    margin: 10px 0 18px;
+}
+
+.kc-dialog .kc-tableview {
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+    width: 408px;
+    /*_width: 423px;*/
+    height: 140px;
+    margin: 10px 0 15px;
+    border: 1px solid #949494;
+}
+
+/*.kc-dialog .kc-tableview {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    _width: 423px;
+    height: 140px;
+    margin: 10px 0 15px;
+    border: 1px solid #949494;
+}*/
+
+.kc-dialog .kc-textview2 {
+    overflow: auto;
+    width: 357px;
+    height: 63px;
+    margin: 0 0 3px;
+    padding: 5px 7px 5px 7px;
+    background-color: #fff;
+    border: 1px solid #6C9CDA;
+    resize: none;
+    box-sizing: content-box;
+}
+
+.kc-dialog .pwList li, .kc-dialog .codeList li {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.kc-dialog .pwList .tit_calc, .kc-dialog .codeList .tit_calc {
+    display: block;
+    float: left;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    vertical-align: middle;
+    width: 138px;
+}
+
+.kc-dialog .codeList .tit_calc {
+    width: 65px;
+}
+
+.kc-dialog .pwList .form_calc, .kc-dialog .codeList .form_calc {
+    float: right;
+}
+
+.kc-dialog .pwList input.tf_m {
+    width: 210px;
+}
+
+.kc-dialog .codeList input.tf_m {
+    width: 270px;
+}
+
+.kc-dialog .rdaioSet {
+    margin: 12px 4px 0;
+}
+
+.kc-dialog .rdaioSet.clfix li {
+    display: inline-block;
+}
+
+.kc-dialog .rdaioSet li {
+    line-height: 20px;
+    display: block;
+}
+
+.kc-dialog .rdaioSet li .rdo {
+    vertical-align: middle;
+}
+
+.kc-dialog .rdaioSet li label {
+    margin: 0px;
+}
+
+.kc-dialog .file-url, .kc-dialog .filename-url {
+    text-align: right;
+}
+
+.kc-dialog .file-url .txt-url {
+    width: 500px;
+    height: 24px;
+    padding: 0 5px;
+    background: #f0f0f0;
+    cursor: auto;
+    line-height: 24px;
+}
+
+.kc-dialog input[readonly="readonly"] {
+    background: #f0f0f0;
+    border: 1px solid #777;
+    color: #555;
+}
+
+.kc-dialog .kc-mbottom {
+    margin: 0 0 10px;
+    text-align: left;
+}
+.kc-dialog .kc-mbottomm img {
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.kc-dialog .kc-medialist {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    overflow-x: scroll;
+    overflow-y: auto;
+    width: 160px;
+    height: 250px;
+    border: 1px solid #949494;
+    background-color: #fff;
+    margin: 14px 14px 14px 0px;
+    cursor: auto;
+}
+
+.kc-dialog .kc-medialist table {
+    width: 100%;
+}
+
+.kc-dialog .kc-filelist {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    overflow-x: scroll;
+    overflow-y: auto;
+    _float: left;
+    width: 508px;
+    height: 250px;
+    border: 1px solid #949494;
+    background-color: #fff;
+    margin: 14px 0px;
+    cursor: auto;
+}
+
+.kc-dialog .kc-filelist table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.kc-dialog .kc-medialist td span, .kc-dialog .kc-filelist td span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+
+.kc-dialog .kc-medialist td a, .kc-dialog .kc-filelist td a {
+    display: block;
+    color: #000;
+    font-size: 12px;
+}
+
+.kc-dialog .filename-url .txt-nurl {
+    width: 507px;
+    height: 24px;
+    margin-left: 4px;
+    padding: 0 0 0 2px;
+    border: 1px solid #c9c9c9;
+    background: #f0f0f0;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.kc-dropdown-menu {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 17px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 3px solid #2e6da4;
+    /*border: 1px solid rgba(0, 0, 0, .15);*/
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.kc-dropdown-menu.pull-right {
+    right: 0;
+    left: auto;
+}
+.kc-dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.kc-dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: bold;
+    line-height: 1.42857143;
+    color: black;
+    white-space: nowrap;
+}
+.kc-cert-widget {
+    position: absolute;
+    bottom:-30px;
+    left: 5px;
+    background-color: white;
+    max-width: 440px;
+    padding: 7px;
+    border: 3px solid #2e6da4;
+    border-radius: 6px;
+    box-shadow: gray 10px 12px 35px;
+    display: none;
+}
+
+.kc-cert-widget div
+{
+    font-size: 11px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kc-expire-msg
+{
+    font-weight: bold;
+}
+
+.kc-renew-msg
+{
+    font-weight: bold;
+}

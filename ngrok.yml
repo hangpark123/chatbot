@@ -1,0 +1,6 @@
+authtoken: 2gisLyQtxIBKmUcGEOKVIXe1Y6S_3uwDwbqKu1rVeM3wek9ov
+tunnels:
+  myapp:
+    addr: 8080 # 로컬 서버 포트 번호
+    proto: http
+    hostname: bori.ngrok.dev

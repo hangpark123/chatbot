@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\portal.kduniv.ac.kr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\login.jsp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.jsp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\css\\login\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr-1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\css\\login\\notosanskr-1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\css\\login\\notosanskr.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\roboto.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\css\\login\\roboto.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\portal.kduniv.ac.kr\\index.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "notosanskr-1.css",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr-1.css",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\css\\login\\notosanskr-1.css",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr-1.css",
+              "RelativeToolTip": "eXPortal\\kdu\\css\\login\\notosanskr-1.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T02:57:37.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "notosanskr.css",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr.css",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\css\\login\\notosanskr.css",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\notosanskr.css",
+              "RelativeToolTip": "eXPortal\\kdu\\css\\login\\notosanskr.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T02:57:34.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "roboto.css",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\roboto.css",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\css\\login\\roboto.css",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\roboto.css",
+              "RelativeToolTip": "eXPortal\\kdu\\css\\login\\roboto.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T02:57:32.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.htm",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\index.htm",
+              "RelativeDocumentMoniker": "index.htm",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\index.htm",
+              "RelativeToolTip": "index.htm",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-13T02:57:14.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\login.css",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\css\\login\\login.css",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\eXPortal\\kdu\\css\\login\\login.css",
+              "RelativeToolTip": "eXPortal\\kdu\\css\\login\\login.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T02:55:12.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.jsp.html",
+              "DocumentMoniker": "D:\\portal.kduniv.ac.kr\\login.jsp.html",
+              "RelativeDocumentMoniker": "login.jsp.html",
+              "ToolTip": "D:\\portal.kduniv.ac.kr\\login.jsp.html",
+              "RelativeToolTip": "login.jsp.html",
+              "ViewState": "AQIAAKACAAAAAAAAAAAAwMMCAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-13T02:55:02.3Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

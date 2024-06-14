@@ -1,0 +1,817 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\firebase.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:real\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:real\\.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:real\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:real\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.firebaserc||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.firebaserc||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\serviceAccountKey.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:serviceAccountKey.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:real\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met_dorm.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crawl_met_dorm.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crawl_met.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lecturelist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lecturelist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lectureinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lectureinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:load_crawl_met.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met_dorm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:load_crawl_met_dorm.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow_API.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dialogflow_API.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_firebase.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crawl_metropole_firebase.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crawl_metropole.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_bus.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crawl_metropole_bus.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\credentials.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:credentials.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.jsp||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.jsp||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\schedule.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:schedule.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\Chatbot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\Chatbot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\dialogflow.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\dialogflow.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\123\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:123\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\eXPortal\\js\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\eXPortal\\js\\jquery.min-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\images\\bg_img02.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\eXPortal\\images\\bg_img02.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Downloads\\skill-main\\skill-main\\crawl_met_dorm.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\database.rules.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database.rules.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dialogflow.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\chat.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:chat.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Downloads\\newagent-idf9-1b07a958794b.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\js\\Backstretch-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\kdu\\js\\Backstretch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\js\\jquery.min-1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eXPortal\\js\\jquery.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.js",
+              "RelativeDocumentMoniker": "index.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.js",
+              "RelativeToolTip": "index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T12:29:55.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\.gitignore",
+              "RelativeDocumentMoniker": "main\\.gitignore",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\.gitignore",
+              "RelativeToolTip": "main\\.gitignore",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-13T12:12:56.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package.json",
+              "RelativeDocumentMoniker": "real\\package.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package.json",
+              "RelativeToolTip": "real\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T12:08:53.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\index.js",
+              "RelativeDocumentMoniker": "real\\index.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\index.js",
+              "RelativeToolTip": "real\\index.js",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwEQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T12:04:57.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "crawl_met.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met.json",
+              "RelativeDocumentMoniker": "crawl_met.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met.json",
+              "RelativeToolTip": "crawl_met.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-11T15:02:58.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package.json",
+              "RelativeDocumentMoniker": "functions\\package.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package.json",
+              "RelativeToolTip": "functions\\package.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-03T16:11:59.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-25T11:10:23.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": ".firebaserc",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.firebaserc",
+              "RelativeDocumentMoniker": ".firebaserc",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.firebaserc",
+              "RelativeToolTip": ".firebaserc",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-27T14:33:31.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "firebase.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\firebase.json",
+              "RelativeDocumentMoniker": "firebase.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\firebase.json",
+              "RelativeToolTip": "firebase.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T14:34:27.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-25T11:27:16.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package-lock.json",
+              "RelativeDocumentMoniker": "package-lock.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\package-lock.json",
+              "RelativeToolTip": "package-lock.json",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-25T11:25:39.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\index.html",
+              "RelativeDocumentMoniker": "public\\index.html",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\index.html",
+              "RelativeToolTip": "public\\index.html",
+              "ViewState": "AQIAALcCAAAAAAAAAAAAAOICAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-29T17:55:46.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".eslintrc.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.eslintrc.js",
+              "RelativeDocumentMoniker": "real\\.eslintrc.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.eslintrc.js",
+              "RelativeToolTip": "real\\.eslintrc.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T12:05:25.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "load_crawl_met_dorm.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met_dorm.js",
+              "RelativeDocumentMoniker": "load_crawl_met_dorm.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met_dorm.js",
+              "RelativeToolTip": "load_crawl_met_dorm.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T10:55:44.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "lecturelist.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lecturelist.json",
+              "RelativeDocumentMoniker": "lecturelist.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lecturelist.json",
+              "RelativeToolTip": "lecturelist.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T10:56:18.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "load_crawl_met.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met.js",
+              "RelativeDocumentMoniker": "load_crawl_met.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\load_crawl_met.js",
+              "RelativeToolTip": "load_crawl_met.js",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-11T15:00:23.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.gitignore",
+              "RelativeDocumentMoniker": "real\\.gitignore",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\.gitignore",
+              "RelativeToolTip": "real\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-13T12:09:47.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package-lock.json",
+              "RelativeDocumentMoniker": "real\\package-lock.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\real\\package-lock.json",
+              "RelativeToolTip": "real\\package-lock.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T12:09:46.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\index.js",
+              "RelativeDocumentMoniker": "main\\index.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\main\\index.js",
+              "RelativeToolTip": "main\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T12:12:55.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "serviceAccountKey.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\serviceAccountKey.json",
+              "RelativeDocumentMoniker": "serviceAccountKey.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\serviceAccountKey.json",
+              "RelativeToolTip": "serviceAccountKey.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-11T14:07:52.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "crawl_met_dorm.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met_dorm.json",
+              "RelativeDocumentMoniker": "crawl_met_dorm.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_met_dorm.json",
+              "RelativeToolTip": "crawl_met_dorm.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvyIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-11T15:00:54.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "lectureinfo.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lectureinfo.json",
+              "RelativeDocumentMoniker": "lectureinfo.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\lectureinfo.json",
+              "RelativeToolTip": "lectureinfo.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T10:56:20.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package-lock.json",
+              "RelativeDocumentMoniker": "functions\\package-lock.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\package-lock.json",
+              "RelativeToolTip": "functions\\package-lock.json",
+              "ViewState": "AQIAAOYaAAAAAAAAAAAAAA8bAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-03T16:12:06.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.gitignore",
+              "RelativeDocumentMoniker": "functions\\.gitignore",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.gitignore",
+              "RelativeToolTip": "functions\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-03T16:12:08.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\index.js",
+              "RelativeDocumentMoniker": "functions\\index.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\index.js",
+              "RelativeToolTip": "functions\\index.js",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-27T14:40:16.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": ".eslintrc.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.eslintrc.js",
+              "RelativeDocumentMoniker": "functions\\.eslintrc.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\functions\\.eslintrc.js",
+              "RelativeToolTip": "functions\\.eslintrc.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-03T16:34:52.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Dialogflow_API.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow_API.json",
+              "RelativeDocumentMoniker": "Dialogflow_API.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow_API.json",
+              "RelativeToolTip": "Dialogflow_API.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-06T16:00:37.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "crawl_metropole_firebase.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_firebase.js",
+              "RelativeDocumentMoniker": "crawl_metropole_firebase.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_firebase.js",
+              "RelativeToolTip": "crawl_metropole_firebase.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T11:11:56.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "credentials.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\credentials.json",
+              "RelativeDocumentMoniker": "credentials.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\credentials.json",
+              "RelativeToolTip": "credentials.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T10:56:27.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "index.jsp",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.jsp",
+              "RelativeDocumentMoniker": "index.jsp",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\index.jsp",
+              "RelativeToolTip": "index.jsp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-25T11:27:39.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\login.html",
+              "RelativeDocumentMoniker": "login.html",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\login.html",
+              "RelativeToolTip": "login.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T11:25:40.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "crawl_metropole_bus.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_bus.js",
+              "RelativeDocumentMoniker": "crawl_metropole_bus.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole_bus.js",
+              "RelativeToolTip": "crawl_metropole_bus.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T10:56:13.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "crawl_metropole.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole.js",
+              "RelativeDocumentMoniker": "crawl_metropole.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\crawl_metropole.js",
+              "RelativeToolTip": "crawl_metropole.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-13T10:56:14.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "schedule.html",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\schedule.html",
+              "RelativeDocumentMoniker": "schedule.html",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\schedule.html",
+              "RelativeToolTip": "schedule.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-13T10:56:24.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "jquery.min.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min.js",
+              "RelativeDocumentMoniker": "eXPortal\\js\\jquery.min.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min.js",
+              "RelativeToolTip": "eXPortal\\js\\jquery.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-25T11:30:11.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "jquery.min-1.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min-1.js",
+              "RelativeDocumentMoniker": "eXPortal\\js\\jquery.min-1.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\js\\jquery.min-1.js",
+              "RelativeToolTip": "eXPortal\\js\\jquery.min-1.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-25T11:30:12.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "jquery.min.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min.js",
+              "RelativeDocumentMoniker": "public\\eXPortal\\js\\jquery.min.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min.js",
+              "RelativeToolTip": "public\\eXPortal\\js\\jquery.min.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-29T18:00:08.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Chatbot.html",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\Chatbot.html",
+              "RelativeDocumentMoniker": "public\\Chatbot.html",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\Chatbot.html",
+              "RelativeToolTip": "public\\Chatbot.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-05T15:13:54.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "dialogflow.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\dialogflow.js",
+              "RelativeDocumentMoniker": "public\\dialogflow.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\dialogflow.js",
+              "RelativeToolTip": "public\\dialogflow.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-05T13:31:05.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\123\\index.js",
+              "RelativeDocumentMoniker": "123\\index.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\123\\index.js",
+              "RelativeToolTip": "123\\index.js",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-05T15:10:00.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "jquery.min-1.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min-1.js",
+              "RelativeDocumentMoniker": "public\\eXPortal\\js\\jquery.min-1.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\js\\jquery.min-1.js",
+              "RelativeToolTip": "public\\eXPortal\\js\\jquery.min-1.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-29T18:00:10.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "bg_img02.png",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\images\\bg_img02.png",
+              "RelativeDocumentMoniker": "public\\eXPortal\\images\\bg_img02.png",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\public\\eXPortal\\images\\bg_img02.png",
+              "RelativeToolTip": "public\\eXPortal\\images\\bg_img02.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-29T18:33:21.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "chat.html",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\chat.html",
+              "RelativeDocumentMoniker": "chat.html",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\chat.html",
+              "RelativeToolTip": "chat.html",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-25T11:41:25.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "newagent-idf9-1b07a958794b.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Downloads\\newagent-idf9-1b07a958794b.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\newagent-idf9-1b07a958794b.json",
+              "ToolTip": "C:\\Users\\minsu\\Downloads\\newagent-idf9-1b07a958794b.json",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\newagent-idf9-1b07a958794b.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T14:11:47.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "crawl_met_dorm.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Downloads\\skill-main\\skill-main\\crawl_met_dorm.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\skill-main\\skill-main\\crawl_met_dorm.json",
+              "ToolTip": "C:\\Users\\minsu\\Downloads\\skill-main\\skill-main\\crawl_met_dorm.json",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\skill-main\\skill-main\\crawl_met_dorm.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-29T15:46:59.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Dialogflow.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow.json",
+              "RelativeDocumentMoniker": "Dialogflow.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\Dialogflow.json",
+              "RelativeToolTip": "Dialogflow.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T14:12:14.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-27T14:33:33.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "database.rules.json",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\database.rules.json",
+              "RelativeDocumentMoniker": "database.rules.json",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\database.rules.json",
+              "RelativeToolTip": "database.rules.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-27T14:34:36.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Backstretch.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch.js",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\js\\Backstretch.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch.js",
+              "RelativeToolTip": "eXPortal\\kdu\\js\\Backstretch.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-25T11:30:20.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Backstretch-1.js",
+              "DocumentMoniker": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch-1.js",
+              "RelativeDocumentMoniker": "eXPortal\\kdu\\js\\Backstretch-1.js",
+              "ToolTip": "C:\\Users\\minsu\\Desktop\\\uC878\uC791\\Homepage\\eXPortal\\kdu\\js\\Backstretch-1.js",
+              "RelativeToolTip": "eXPortal\\kdu\\js\\Backstretch-1.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-25T11:30:21.157Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
