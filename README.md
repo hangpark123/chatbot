@@ -14,9 +14,10 @@
 
 ## 🛠️ 기술 스택 및 구현 환경
 - **프로그래밍 언어**: Node.js, JavaScript
-- **백엔드 기술**: Express.js, Puppeteer
+- **백엔드 기술**: Node.js
 - **데이터 관리**: Google Sheets API
 - **배포 환경**: 클라우드 기반 서버
+- **플랫폼**: Kakao i open Builder,Dialogflow
 
 ---
 
